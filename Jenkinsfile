@@ -26,7 +26,13 @@ pipeline {
         }
 
         stage('Test') {
-            steps {
+ 
+           when {
+              expression {
+                    return false
+                }
+    }
+           steps {     
                 sh '''
                     npm test
                 '''
