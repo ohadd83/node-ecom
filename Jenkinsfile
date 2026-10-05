@@ -3,7 +3,7 @@ pipeline {
     agent any
 
     environment {
-        DOCKER_IMAGE = "ohadd83/ecommerce-nodejs"
+        DOCKER_IMAGE = "ohadd306/ecommerce-nodejs"
         DOCKER_TAG   = "${BUILD_NUMBER}"
         CONTAINER_NAME = "ecommerce-app"
         APP_PORT = "3000"
